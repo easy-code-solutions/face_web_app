@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Recognition</title>
+</head>
+<body>
+  <h1>Face Recognition App</h1>
+
+  <h2>Enroll Student</h2>
+  <form action="/enroll" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Enter Name" required>
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Enroll</button>
+  </form>
+
+  <h2>Identify Student</h2>
+  <form action="/identify" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Identify</button>
+  </form>
+</body>
+</html>
